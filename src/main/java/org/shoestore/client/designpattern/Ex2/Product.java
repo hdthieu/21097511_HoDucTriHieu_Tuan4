@@ -11,10 +11,6 @@ public class Product {
         this.tax = tax;
     }
 
-    public void setTax(Tax tax) {
-        this.tax = tax;
-    }
-
     public double calculatePrice() {
         return price + tax.calculateTax(price);
     }
